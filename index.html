@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier — Responsive Portfolio Homepage</title>
+  <meta name="description" content="Responsive portfolio homepage project with a premium editorial-style layout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#hero" aria-label="Ana sayfaya dön">Atelier</a>
+      <nav class="top-nav" aria-label="Ana gezinme">
+        <a href="#projects">Projeler</a>
+        <a href="#approach">Yaklaşım</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <p class="eyebrow">Creative Frontend Portfolio</p>
+        <h1>Duyarlı, zarif ve güçlü dijital deneyimler tasarlıyorum.</h1>
+        <p class="hero__lead">
+          Bu çalışma, klasik bir portföy ana sayfasını daha premium bir görsel dille yorumlamak için hazırlandı.
+          Amaç sadece bir sayfa üretmek değil; masaüstü, tablet ve mobil görünümde güçlü duran, profesyonel ve akılda kalıcı bir vitrin oluşturmaktı.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">Projeleri İncele</a>
+          <a class="btn btn--ghost" href="#contact">İletişim</a>
+        </div>
+
+        <ul class="hero__meta" aria-label="Öne çıkan nitelikler">
+          <li><strong>01</strong><span>Responsive layout</span></li>
+          <li><strong>02</strong><span>Semantic HTML</span></li>
+          <li><strong>03</strong><span>Accessible structure</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <div class="portrait-frame">
+          <div class="portrait-frame__card">
+            <svg viewBox="0 0 620 760" role="img" aria-label="Editoryal stil portre illüstrasyonu">
+              <defs>
+                <linearGradient id="portrait-gradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#f7ddcf" />
+                  <stop offset="100%" stop-color="#d2ac95" />
+                </linearGradient>
+              </defs>
+              <rect width="620" height="760" rx="36" fill="url(#portrait-gradient)"/>
+              <circle cx="310" cy="284" r="118" fill="#f4d2be"/>
+              <path d="M186 268c0-90 57-162 124-162s124 72 124 162v20c-25-16-43-23-67-23-32 0-61 14-88 14-30 0-52-6-74-18z" fill="#31211c"/>
+              <path d="M206 586c28-97 116-156 204-156s176 59 204 156v110H206z" fill="#1d2b39"/>
+              <rect x="270" y="372" width="80" height="104" rx="38" fill="#efc7b0"/>
+              <path d="M310 400c-63 0-114-49-114-112v-31c0-15 9-22 24-25 50-8 84-23 116-48 28 24 60 39 95 46 16 3 25 11 25 27v31c0 63-51 112-146 112z" fill="#f4d2be"/>
+              <circle cx="270" cy="284" r="8" fill="#432921"/>
+              <circle cx="350" cy="284" r="8" fill="#432921"/>
+              <path d="M281 330c18 11 40 11 58 0" fill="none" stroke="#c7796f" stroke-width="9" stroke-linecap="round"/>
+              <ellipse cx="310" cy="724" rx="190" ry="38" fill="#000" opacity="0.08"/>
+            </svg>
+          </div>
+          <div class="portrait-frame__label">
+            <span>Visual identity</span>
+            <strong>Portfolio Homepage</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content">
+    <section class="highlight-strip" aria-label="Hızlı özellikler">
+      <div class="container highlight-strip__inner">
+        <p>320px — 1920px arası optimize edildi</p>
+        <p>Grid + Flex kombinasyonu</p>
+        <p>Media query ve erişilebilir odak stilleri</p>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">Farklı ekranlarda karakterini koruyan işler.</h2>
+          <p>
+            Kart yapıları, tipografi, spacing ve renk blokları farklı ekranlarda yeniden dengelenerek
+            aynı hissi koruyacak şekilde kurgulandı.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card--violet">
+            <div class="project-card__thumb">
+              <span>01</span>
+              <strong>Editorial Commerce</strong>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3>Luxury Shop Layout</h3>
+                <div class="project-card__links">
+                  <a href="#" aria-label="Luxury Shop Layout kaynak kodu">GitHub</a>
+                  <a href="#" aria-label="Luxury Shop Layout canlı önizleme">Live</a>
+                </div>
+              </div>
+              <p>Büyük başlıklar, ürün odaklı bloklar ve yüksek kontrastlı çağrı alanlarıyla hazırlanmış premium alışveriş deneyimi.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--amber">
+            <div class="project-card__thumb">
+              <span>02</span>
+              <strong>Studio Showcase</strong>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3>Design Studio Page</h3>
+                <div class="project-card__links">
+                  <a href="#" aria-label="Design Studio Page kaynak kodu">GitHub</a>
+                  <a href="#" aria-label="Design Studio Page canlı önizleme">Live</a>
+                </div>
+              </div>
+              <p>Yumuşak geçişler, blok düzen ve görsel hiyerarşiyle güçlendirilmiş modern ajans açılış sayfası.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--blue">
+            <div class="project-card__thumb">
+              <span>03</span>
+              <strong>Metrics View</strong>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3>Insight Dashboard</h3>
+                <div class="project-card__links">
+                  <a href="#" aria-label="Insight Dashboard kaynak kodu">GitHub</a>
+                  <a href="#" aria-label="Insight Dashboard canlı önizleme">Live</a>
+                </div>
+              </div>
+              <p>Yoğun bilgi gösterimini boğmadan sunan, kart tabanlı veri panosu ve kontrol alanları tasarımı.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-card--green">
+            <div class="project-card__thumb">
+              <span>04</span>
+              <strong>Travel Journal</strong>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3>Destination Stories</h3>
+                <div class="project-card__links">
+                  <a href="#" aria-label="Destination Stories kaynak kodu">GitHub</a>
+                  <a href="#" aria-label="Destination Stories canlı önizleme">Live</a>
+                </div>
+              </div>
+              <p>Keşif hissini öne çıkaran, geniş görsel bloklar ve editoryal metin akışıyla kurgulanmış gezi sitesi.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach section" id="approach" aria-labelledby="approach-title">
+      <div class="container approach__container">
+        <div class="approach__intro">
+          <p class="eyebrow">Design Notes</p>
+          <h2 id="approach-title">Sadece responsive değil, aynı zamanda karakter sahibi.</h2>
+        </div>
+
+        <div class="approach__cards">
+          <article>
+            <h3>Esnek yapı</h3>
+            <p>Sabit genişliklerden kaçınıldı; grid ve flexible spacing ile doğal akış korundu.</p>
+          </article>
+          <article>
+            <h3>Erişilebilirlik</h3>
+            <p>Semantic yapı, görünür focus state, anlamlı bağlantılar ve okunaklı kontrast değerleri eklendi.</p>
+          </article>
+          <article>
+            <h3>Ayırt edici görünüm</h3>
+            <p>Standart öğrenci projesi hissinden uzaklaşmak için editoryal tipografi ve özel renk dengesi kullanıldı.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact__container">
+      <div class="contact__text">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">İlginizi çektiyse bağlantıda kalalım.</h2>
+        <p>
+          Bu proje, portföy ana sayfası ödevi için daha özgün ve profesyonel bir yorum olarak geliştirildi.
+          Gerçek kullanımda burada kendi e-posta, sosyal medya ve proje bağlantılarını yerleştirebilirsin.
+        </p>
+
+        <ul class="contact-list">
+          <li><strong>E-posta</strong><span>hello@atelier.dev</span></li>
+          <li><strong>Telefon</strong><span>+90 555 555 55 55</span></li>
+          <li><strong>Şehir</strong><span>İstanbul, Türkiye</span></li>
+        </ul>
+      </div>
+
+      <aside class="contact__panel" aria-label="Sosyal bağlantılar ve kısa not">
+        <h3>Quick Reach</h3>
+        <p>GitHub Pages’e yükledikten sonra buradaki linkleri kendi profil adreslerinle güncellemen yeterli.</p>
+        <div class="contact__links">
+          <a href="#" aria-label="GitHub profili">GitHub</a>
+          <a href="#" aria-label="LinkedIn profili">LinkedIn</a>
+          <a href="#" aria-label="Behance profili">Behance</a>
+        </div>
+      </aside>
+    </div>
+  </footer>
+</body>
+</html>
